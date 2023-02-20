@@ -93,45 +93,90 @@ class RollsController < ApplicationController
     render({ :template => "dice/3d4.html.erb" })
   end
 
- def rolling44
-@array = Array.new
-4.times do
-random_number = rand(1..4)
+  def rolling44
+    @array = Array.new
+    4.times do
+      random_number = rand(1..4)
 
-@array.push(random_number)
-end
+      @array.push(random_number)
+    end
 
-render({ :template => "dice/4d4.html.erb" })
-end
-
-
-def rolling18
-@array = Array.new
-
-random_number = rand(1..8)
-@array.push(random_number)
-
-  render({ :template => "dice/1d8.html.erb" })
-end
-
-def rolling28
-  @array = Array.new
-  2.times do
-    random_number = rand(1..8)
-    @array.push(random_number)
+    render({ :template => "dice/4d4.html.erb" })
   end
 
-  render({ :template => "dice/2d8.html.erb" })
+  def rolling18
+    @array = Array.new
+
+    random_number = rand(1..8)
+    @array.push(random_number)
+
+    render({ :template => "dice/1d8.html.erb" })
+  end
+
+  def rolling28
+    @array = Array.new
+    2.times do
+      random_number = rand(1..8)
+      @array.push(random_number)
+    end
+
+    render({ :template => "dice/2d8.html.erb" })
+  end
+
+  def rolling38
+    @array = Array.new
+    3.times do
+      random_number = rand(1..8)
+      @array.push(random_number)
+    end
+
+    render({ :template => "dice/3d8.html.erb" })
+  end
+
+  def rolling110
+    @array = Array.new
+
+    random_number = rand(1..10)
+    @array.push(random_number)
+
+    render({ :template => "dice/1d10.html.erb" })
+  end
+
+  def rolling210
+    @array = Array.new
+    2.times do
+      random_number = rand(1..10)
+      @array.push(random_number)
+    end
+
+    render({ :template => "dice/2d10.html.erb" })
+  end
+
+def rolling120
+@array = Array.new
+random_number = rand(1..20)
+@array.push(random_number)
+
+  render({ :template => "dice/1d20.html.erb" })
 end
 
-def rolling38
-  @array = Array.new
+def rolling220
+@array = Array.new
+2.times do
+  random_number = rand(1..20)
+  @array.push(random_number)
+
+end
+  render({ :template => "dice/2d20.html.erb" })
+end
+
+def rolling320
+@array = Array.new
   3.times do
-    random_number = rand(1..8)
-    @array.push(random_number)
-  end
-
-  render({ :template => "dice/3d8.html.erb" })
+random_number = rand(1..20)
+@array.push(random_number)
+end
+render({ :template => "dice/3d20.html.erb" })
 end
 
 

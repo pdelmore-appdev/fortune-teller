@@ -55,27 +55,21 @@ Rails.application.routes.draw do
     get("roll/6/6", { :controller => "rolls", :action => "rolling66" })
     get("roll/1/4", { :controller => "rolls", :action => "rolling14" })
     get("roll/2/4", { :controller => "rolls", :action => "rolling24" })
-
-  # /roll/3/4
     get("roll/3/4", { :controller => "rolls", :action => "rolling34" })
-
-  # /roll/4/4
     get("roll/4/4", { :controller => "rolls", :action => "rolling44" })
-
-
-  # /roll/1/8
     get("roll/1/8", { :controller => "rolls", :action => "rolling18" })
-
-
-  # /roll/2/8
     get("roll/2/8", { :controller => "rolls", :action => "rolling28" })
-
     get("roll/3/8", { :controller => "rolls", :action => "rolling38" })
+    get("roll/1/10", { :controller => "rolls", :action => "rolling110" })
 
-
-  # /roll/1/10
   # /roll/2/10
-  # /roll/1/20
-  # /roll/2/20
+
+    get("roll/2/10", { :controller => "rolls", :action => "rolling210" })
+
+    get("roll/1/20", { :controller => "rolls", :action => "rolling120" })
+
+    get("roll/2/20", { :controller => "rolls", :action => "rolling220" })
+
+    get("roll/3/20", { :controller => "rolls", :action => "rolling320" })
 
 end

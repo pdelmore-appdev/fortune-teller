@@ -39,6 +39,6 @@ class FiresController < ApplicationController
       @array_of_numbers.push(another_number)
     end
 
-    render({ :template => "fire_interface/sagitarrius.html.erb" })
+    render({ :template => "flame_interface/sagittarius.html.erb" })
   end
 end
